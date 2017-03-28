@@ -5,13 +5,12 @@
 import com.sun.java.swing.plaf.motif.MotifBorders;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 
-public class Calculator {
+public class Calculator extends JFrame {
 
     String display_text = "0";
     String A = "0";
@@ -83,8 +82,8 @@ public class Calculator {
     }
 
     private class Solver {
-        String equ = "";
-        String Result = "";
+        private String equ = "";
+        private String Result = "";
 
         private String Filter(String equ) {
 
@@ -123,7 +122,7 @@ public class Calculator {
                 }
 
                 brackets = equ.substring(bStartIndex, bEndIndex);
-                System.out.println("brackets = " + brackets);
+                //System.out.println("brackets = " + brackets);
                 //Вычисляем выражение во внутренних скобках и заменяем выражение в скобках его вычислинным значением
                 equ = equ.replace(brackets, Solv(equ.substring(bStartIndex + 1, bEndIndex - 1)));
                 //Снова проверяем выражение на присутствие скобок
@@ -138,12 +137,12 @@ public class Calculator {
 
             String result = "";
 
-            System.out.println("ParseAndSolvTrigs in = " + equ);
+            //System.out.println("ParseAndSolvTrigs in = " + equ);
 
             equ = equ.replace("*", "U*");
             equ = equ.replace("/", "U/");
 
-            System.out.println("equ = " + equ);
+            //System.out.println("equ = " + equ);
 
             String[] args = equ.split("U");
 
@@ -153,54 +152,53 @@ public class Calculator {
                     //args[i] = args[i].replace("--", "-");
                     int t = args[i].indexOf('n') + 1;
                     String sin_arg = args[i].substring(t);
-                    System.out.println("sin_arg = " + sin_arg);
+                    //System.out.println("sin_arg = " + sin_arg);
                     args[i] = args[i].replace("sin" + sin_arg, Math.sin(Double.parseDouble(sin_arg)) + "");
-                    System.out.println("args[" + i + "] = " + args[i]);
+                    //System.out.println("args[" + i + "] = " + args[i]);
                 }
                 if (args[i].contains("cos")) {
                     //args[i] = args[i].replace("+-", "-");
                     //args[i] = args[i].replace("--", "-");
                     int t = args[i].indexOf('s') + 1;
                     String cos_arg = args[i].substring(t);
-                    System.out.println("cos_arg = " + cos_arg);
+                    //System.out.println("cos_arg = " + cos_arg);
                     args[i] = args[i].replace("cos" + cos_arg, Math.cos(Double.parseDouble(cos_arg)) + "");
-                    System.out.println("args[" + i + "] = " + args[i]);
+                    //System.out.println("args[" + i + "] = " + args[i]);
                 }
                 if (args[i].contains("tg")) {
                     int t = args[i].indexOf('g') + 1;
                     String tg_arg = args[i].substring(t);
-                    System.out.println("tg_arg = " + tg_arg);
+                    //System.out.println("tg_arg = " + tg_arg);
                     args[i] = args[i].replace("tg" + tg_arg, Math.tan(Double.parseDouble(tg_arg)) + "");
-                    System.out.println("args[" + i + "] = " + args[i]);
+                    //System.out.println("args[" + i + "] = " + args[i]);
                 }
                 if (args[i].contains("log")) {
                     int t = args[i].indexOf('g') + 1;
                     String log_arg = args[i].substring(t);
-                    System.out.println("log_arg = " + log_arg);
+                    //System.out.println("log_arg = " + log_arg);
                     args[i] = args[i].replace("log" + log_arg, Math.log10(Double.parseDouble(log_arg)) + "");
-                    System.out.println("args[" + i + "] = " + args[i]);
+                    //System.out.println("args[" + i + "] = " + args[i]);
                 }
                 if (args[i].contains("sqrt")) {
                     int t = args[i].indexOf('t') + 1;
                     String sqrt_arg = args[i].substring(t);
-                    System.out.println("sqrt_arg = " + sqrt_arg);
+                    //System.out.println("sqrt_arg = " + sqrt_arg);
                     args[i] = args[i].replace("sqrt" + sqrt_arg, Math.sqrt(Double.parseDouble(sqrt_arg)) + "");
-                    System.out.println("args[" + i + "] = " + args[i]);
+                    //System.out.println("args[" + i + "] = " + args[i]);
                 }
                 result = result + args[i];
             }
 
             result = result.replace("+-", "-");
             result = result.replace("--", "+");
-            System.out.println("ParseAndSolvTrigs return = " + result);
+            //System.out.println("ParseAndSolvTrigs return = " + result);
             return result + "";
         }
 
-        private String Solv(String equ)
-        {
+        private String Solv(String equ) {
             double result = 0.0;
 
-            System.out.println("Solv in = " + equ);
+            //System.out.println("Solv in = " + equ);
             //Временно заменяем показатели степени
             equ = equ.replace("E+", "Z");
             equ = equ.replace("e+", "Z");
@@ -260,12 +258,11 @@ public class Calculator {
                 else
                     result = result + MultiplyAndDivide(args[i]);
 
-            System.out.println("Solv return = " + result + "");
+            //System.out.println("Solv return = " + result + "");
             return result + "";
         }
 
-        private double MultiplyAndDivide(String equ)
-        {
+        private double MultiplyAndDivide(String equ) {
             double result = 1.0;
 
             equ = equ.replace("*", "UM");
@@ -283,8 +280,7 @@ public class Calculator {
             return result;
         }
 
-        Solver()
-        {
+        Solver() {
             JFrame frame = new JFrame("Solver");
             frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
             frame.setSize(320, 120);
@@ -326,89 +322,321 @@ public class Calculator {
             frame.setVisible(true);
         }
 
-        Solver(String s)
-        {
+        Solver(String s) {
             Result = Parse(s);
         }
     }
 
-    private class Graph {
+    private class Graph extends JFrame {
 
-        int x0 = 50;
-        int y0 = 50;
-        int xm;
-        int ym;
-        int gridStepX = 10;
-        int gridStepY = 10;
+        private String function = "sin(x)*sin(20*x)";
+        private Double Xs = -6.28;
+        private Double Xe = 6.28;
 
-        public Graph()
-        {
+        private int x0 = 50;
+        private int y0 = 50;
+        private int xm;
+        private int ym;
+        private Integer gridXnumber = 7;
+        private Integer gridYnumber = 7;
+        private Integer points = 100;
+
+        private Double accuracy = 0.01;
+
+        private boolean drawGridX = true;
+        private boolean drawGridY = true;
+
+        private int L;
+        private int H;
+
+        private JPanel fPanel;
+        private JButton bbuild;
+        private JPanel fConditions;
+        private JCheckBox showGridsX;
+        private JCheckBox showGridsY;
+
+        private FunctionGraphic graphic;
+
+        public Graph() {
+            super("Graph...");
+            Calculator.this.setVisible(false);
+
             Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-            JFrame frame = new JFrame("Graph...");
-            frame.setSize((int) (0.8*dim.getWidth()), (int) (0.8*dim.getHeight()));
-            frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
-            frame.setResizable(true);
+            H = (int) (0.9 * dim.getHeight());
+            L = (int) (0.9 * dim.getWidth());
 
-            JPanel function = new JPanel();
-            JTextPane functionField = new JTextPane();
-            functionField.setText("sin(x)*sin(20*x)");
-            functionField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
-            JLabel functionLabel = new JLabel("F(x)=");
+            this.setSize(L, H);
+            this.setLayout(null);
+            this.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+            this.setResizable(true);
 
-            JPanel fConditions = new JPanel();
-            JLabel fStartPointLabel = new JLabel("Start point Xs=");
-
-            JTextPane fStartPoint = new JTextPane();
-            fStartPoint.setText("-6.28");
-            fStartPoint.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
-            JLabel fEndPointLabel = new JLabel("End point Xe=");
-
-            JTextPane fEndPoint = new JTextPane();
-            fEndPoint.setText("6.28");
-            fEndPoint.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
-
-            fConditions.setLayout(new GridLayout(25, 1));
-            fConditions.add(fStartPointLabel);
-            fConditions.add(fStartPoint);
-            fConditions.add(fEndPointLabel);
-            fConditions.add(fEndPoint);
-
-            JButton bbuild = new JButton(("Build graph"));
-            bbuild.addActionListener(new ActionListener() {
+            this.addComponentListener(new ComponentAdapter() {
                 @Override
-                public void actionPerformed(ActionEvent e) {
-                    String function = functionField.getText();
-                    String xs = fStartPoint.getText();
-                    String xf = fEndPoint.getText();
-                    FunctionGraphic graphic = new FunctionGraphic(function, xs, xf);
-                    graphic.setVisible(true);
-                    frame.add(graphic, BorderLayout.CENTER);
-                    frame.setVisible(true);
+                public void componentResized(ComponentEvent e) {
+                    super.componentResized(e);
+                    H = e.getComponent().getHeight();
+                    L = e.getComponent().getWidth();
+                    initGraph(L, H);
+                }
+
+                @Override
+                public void componentHidden(ComponentEvent e) {
+                    super.componentHidden(e);
+                    Calculator.this.setVisible(true);
                 }
             });
 
-            function.setLayout(new FlowLayout());
-            function.add(functionLabel);
-            function.add(functionField);
-
-            frame.add(bbuild, BorderLayout.SOUTH);
-            frame.add(fConditions, BorderLayout.EAST);
-            frame.add(function, BorderLayout.NORTH);
-
-            frame.setVisible(true);
+            initGraph(L, H);
         }
 
-        private class FunctionGraphic extends JComponent
-        {
-            Graphics g;
-            String function;
-            String xs;
-            String xf;
-            double[][] matrix;
+        private void initGraph (int L, int H) {
 
-            FunctionGraphic(String function, String xs, String xf)
-            {
+            if (fPanel != null) this.remove(fPanel);
+            if (bbuild != null) this.remove(bbuild);
+            if (fConditions != null) this.remove(fConditions);
+
+            fPanel = new JPanel();
+            fPanel.setLayout(null);
+            fPanel.setBounds(10, 10, L / 2 - 20, 70);
+
+            JTextPane functionField = new JTextPane();
+            functionField.setBounds(60, 22, (int) (0.5 * L - 100), 25);
+            functionField.setFont(new Font("Dialog", Font.PLAIN, 16));
+            functionField.setText(function);
+            functionField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
+
+            JLabel functionLabel = new JLabel("F(x) =");
+            functionLabel.setBounds(10, 22, 35, 25);
+            fPanel.add(functionLabel);
+            fPanel.add(functionField);
+
+            fConditions = new JPanel();
+            fConditions.setLayout(null);
+            fConditions.setBounds(L / 2, 10, L - 100, 70);
+
+            JLabel fStartPointLabel = new JLabel("X0 =");
+            fStartPointLabel.setBounds(0, 0, 30, 25);
+            fConditions.add(fStartPointLabel);
+
+            JTextPane fStartPoint = new JTextPane();
+            fStartPoint.setFont(new Font("Dialog", Font.PLAIN, 16));
+            fStartPoint.setText(Xs.toString());
+            fStartPoint.setBounds(35, 0, 90, 25);
+            fStartPoint.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
+            fConditions.add(fStartPoint);
+
+            JLabel fEndPointLabel = new JLabel("X1 =");
+            fEndPointLabel.setBounds(0, 40, 30, 25);
+            fConditions.add(fEndPointLabel);
+
+            JTextPane fEndPoint = new JTextPane();
+            fEndPoint.setFont(new Font("Dialog", Font.PLAIN, 16));
+            fEndPoint.setText(Xe.toString());
+            fEndPoint.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
+            fEndPoint.setBounds(35, 40, 90, 25);
+            fConditions.add(fEndPoint);
+
+            showGridsX = new JCheckBox("Show grid X");
+            showGridsX.setBounds(200, 0, 100, 25);
+            showGridsX.setSelected(drawGridX);
+            showGridsX.addChangeListener(new ChangeListener() {
+                @Override
+                public void stateChanged(ChangeEvent e) {
+                    drawGridX = showGridsX.isSelected();
+                    Graph.this.repaint(0, 0, L, H);
+                }
+            });
+            fConditions.add(showGridsX);
+
+            showGridsY = new JCheckBox("Show grid Y");
+            showGridsY.setBounds(200, 40, 100, 25);
+            showGridsY.setSelected(drawGridY);
+            showGridsY.addChangeListener(new ChangeListener() {
+                @Override
+                public void stateChanged(ChangeEvent e) {
+                    drawGridY = showGridsY.isSelected();
+                    Graph.this.repaint(0, 0, L, H);
+                }
+            });
+            fConditions.add(showGridsY);
+
+            JLabel gridsX = new JLabel("X axis grids number");
+            gridsX.setBounds(350, 0, 120, 25);
+            fConditions.add(gridsX);
+
+            JTextPane gridsXnumberField = new JTextPane();
+            gridsXnumberField.setFont(new Font("Dialog", Font.PLAIN, 16));
+            gridsXnumberField.setText(gridXnumber.toString());
+            gridsXnumberField.setBounds(480, 0, 50, 25);
+            gridsXnumberField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
+            fConditions.add(gridsXnumberField);
+
+            JLabel gridsY = new JLabel("Y axis grids number");
+            gridsY.setBounds(350, 40, 120, 25);
+            fConditions.add(gridsY);
+
+            JTextPane gridsYnumberField = new JTextPane();
+            gridsYnumberField.setFont(new Font("Dialog", Font.PLAIN, 16));
+            gridsYnumberField.setText(gridYnumber.toString());
+            gridsYnumberField.setBounds(480, 40, 50, 25);
+            gridsYnumberField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
+            fConditions.add(gridsYnumberField);
+
+            JLabel pointsNumber = new JLabel("Points number");
+            pointsNumber.setBounds(570, 0, 100, 25);
+            fConditions.add( pointsNumber);
+
+            JTextPane pointsNumberField = new JTextPane();
+            pointsNumberField.setFont(new Font("Dialog", Font.PLAIN, 16));
+            pointsNumberField.setText(points.toString());
+            pointsNumberField.setBounds(670, 0, 50, 25);
+            pointsNumberField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
+            fConditions.add(pointsNumberField);
+
+            JLabel xAccuracy = new JLabel("X accuracy");
+            xAccuracy.setBounds(570, 40, 100, 25);
+            fConditions.add(xAccuracy);
+
+            JTextPane accuracyField = new JTextPane();
+            accuracyField.setFont(new Font("Dialog", Font.PLAIN, 16));
+            accuracyField.setText(accuracy.toString());
+            accuracyField.setBounds(670, 40, 50, 25);
+            accuracyField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
+            fConditions.add(accuracyField);
+
+            bbuild = new JButton(("Build graph"));
+            bbuild.setBounds(20, H - 90, L - 60, 40);
+            bbuild.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    function = functionField.getText();
+                    try {
+                        Xs = Double.parseDouble(Filter(fStartPoint.getText()));
+                    }
+                    catch (NumberFormatException nfe) {
+                        while(true)
+                            try {
+                                Xs = Double.parseDouble(Filter(JOptionPane.showInputDialog(null, "Wrong X0 value!\nEnter another:")));
+                                break;
+                            }
+                            catch (NumberFormatException ex) {}
+                        fStartPoint.setText(Xs.toString());
+                        initGraph(L, H);
+                    }
+
+                    try {
+                        Xe = Double.parseDouble(Filter(fEndPoint.getText()));
+                    }
+                    catch (NumberFormatException nfe) {
+                        Xe = Double.parseDouble(Filter(JOptionPane.showInputDialog(null, "Wrong X1 value!\nEnter another:")));
+                        while(true)
+                            try {
+                                Xe = Double.parseDouble(Filter(JOptionPane.showInputDialog(null, "Wrong X1 value!\nEnter another:")));
+                                break;
+                            }
+                            catch (NumberFormatException ex) {}
+                        fEndPoint.setText(Xe.toString());
+                        initGraph(L, H);
+                    }
+
+                    try {
+                        gridXnumber = Integer.parseInt(Filter(gridsXnumberField.getText()));
+                    }
+                    catch (NumberFormatException nfe) {
+                        while(true)
+                            try {
+                                gridXnumber = Integer.parseInt(Filter(JOptionPane.showInputDialog(null, "Wrong X axis grid number value!\nEnter another:")));
+                                break;
+                            }
+                            catch (NumberFormatException ex) {}
+                        gridsXnumberField.setText(gridsX.toString());
+                        initGraph(L, H);
+                    }
+
+                    try {
+                        gridYnumber = Integer.parseInt(Filter(gridsYnumberField.getText()));
+                    }
+                    catch (NumberFormatException nfe) {
+                        while(true)
+                            try {
+                                gridYnumber = Integer.parseInt(Filter(JOptionPane.showInputDialog(null, "Wrong Y axis grid number value!\nEnter another:")));
+                                break;
+                            }
+                            catch (NumberFormatException ex) {}
+                        gridsYnumberField.setText(gridsY.toString());
+                        initGraph(L, H);
+                    }
+
+                    try {
+                        points = Integer.parseInt(Filter(pointsNumberField.getText()));
+                    }
+                    catch (NumberFormatException nfe) {
+                        while(true)
+                            try {
+                                points = Integer.parseInt(Filter(JOptionPane.showInputDialog(null, "Wrong points number value!\nEnter another:")));
+                                break;
+                            }
+                            catch (NumberFormatException ex) {}
+                        pointsNumberField.setText(points.toString());
+                        initGraph(L, H);
+                    }
+
+                    try {
+                        accuracy = Double.parseDouble(Filter(accuracyField.getText()));
+                    }
+                    catch (NumberFormatException nfe) {
+                        while(true)
+                            try {
+                                accuracy = Double.parseDouble(Filter(JOptionPane.showInputDialog(null, "Wrong accuracy value!\nEnter another:")));
+                                break;
+                            }
+                            catch (NumberFormatException ex) {}
+                        accuracyField.setText(accuracy.toString());
+                        initGraph(L, H);
+                    }
+
+                    if (graphic != null) Graph.this.remove(graphic);
+
+                    graphic = new FunctionGraphic(function, Xs, Xe);
+                    graphic.setBounds(60, 50, L - 120, H - 120);
+                    Graph.this.add(graphic);
+                    Graph.this.repaint(0, 0, L, H);
+                    Graph.this.revalidate();
+                    Graph.this.setVisible(true);
+                }
+            });
+
+            if (graphic != null)
+                Graph.this.remove(graphic);
+
+            this.add(bbuild);
+            this.add(fConditions);
+            this.add(fPanel);
+            this.setVisible(true);
+        }
+
+        private String Filter(String equ) {
+            equ = equ.toLowerCase();
+            equ = equ.replace(",", ".");
+            equ = equ.replace(",,", ".");
+            equ = equ.replace(" ", "");
+            equ = equ.replace("..", ".");
+            equ = equ.replace("=", "");
+            equ = equ.replace("+", "");
+            equ = equ.replace("--", "-");
+            return equ;
+        }
+
+        private class FunctionGraphic extends JComponent {
+            private Graphics g;
+            private String function;
+            private Double xs;
+            private Double xf;
+
+            private double[][] matrix;
+
+            FunctionGraphic(String function, Double xs, Double xf) {
                 super();
                 this.function = function;
                 this.xs = xs;
@@ -417,43 +645,48 @@ public class Calculator {
                 this.repaint();
             }
 
-            double[][] Calculate(String function, String xs, String xf)
-            {
-                int points = 600;
+            double[][] Calculate(String function, double xs, double xf) {
+
+                if (points < (xf - xs) / accuracy)
+                    points = (int) ((xf - xs) / accuracy);
+
                 double[][] matrix = new double[2][points];
-                double dx = (Double.parseDouble(xf) - Double.parseDouble(xs)) / points;
-                for (int i = 0; i < matrix[1].length; i++) {
-                    matrix[0][i] = Double.parseDouble(xs) + i * dx;
+                double dx = (xf - xs) / points;
+                for (int i = 0; i < matrix[1].length; i ++) {
+                    matrix[0][i] = xs + i * dx;
                     matrix[1][i] = Double.parseDouble(new Solver(function.replace("x", matrix[0][i] + "")).Result);
                 }
                 return matrix;
             }
 
-
-            public void paint(Graphics g)
-            {
+            public void paint(Graphics g) {
                 DrawGridAndAxis(g);
                 DrawGraph(g);
             }
 
-            private void DrawGridAndAxis(Graphics g)
-            {
-                int dX = (super.getWidth() - 2 * x0) / gridStepX;
-                int dY = (super.getHeight() - 2 * y0) / gridStepY;
+            private void DrawGridAndAxis(Graphics g) {
+                int dX = (super.getWidth() - 2 * x0) / gridXnumber;
+                int dY = (super.getHeight() - 2 * y0) / gridYnumber;
 
-                xm = x0 + gridStepX * dX;
-                ym = y0 + gridStepY * dY;
+                xm = x0 + gridXnumber * dX;
+                ym = y0 + gridYnumber * dY;
 
                 g.setColor(Color.LIGHT_GRAY);
 
-                for (int i = 0; i <= gridStepX; i++)
-                    g.drawLine(x0 + i * dX, y0, x0 + i * dX, ym);
-                for (int i = 0; i <= gridStepY; i++)
-                    g.drawLine(x0, y0 + i * dY, xm, y0 + i * dY);
+                if (drawGridX || drawGridY) {
+                    if (drawGridX)
+                        for (int i = 0; i <= gridXnumber; i++)
+                            g.drawLine(x0 + i * dX, y0, x0 + i * dX, ym);
+                    if (drawGridY)
+                        for (int i = 0; i <= gridYnumber; i++)
+                            g.drawLine(x0, y0 + i * dY, xm, y0 + i * dY);
+                }
+
+                    g.drawRect(x0, y0, xm - x0, ym - y0);
+
             }
 
-            private void DrawGraph(Graphics g)
-            {
+            private void DrawGraph(Graphics g) {
                 int[][] scrMatrix = new int[2][matrix[1].length];
 
                 double yMin = matrix[1][0];
@@ -485,9 +718,7 @@ public class Calculator {
                 g.setColor(Color.RED);
                 g.drawString(matrix[0][0] + "", x0, ym + 20);
                 g.drawString(matrix[0][matrix[0].length - 1] + "", xm, ym + 20);
-
             }
-
         }
     }
 
@@ -531,11 +762,11 @@ public class Calculator {
     }
 
     public Calculator() {
-        JFrame frame = new JFrame("The Calculator");
-        frame.setSize(480, 240);
-        frame.setLocation(420, 300);
-        frame.setResizable(false);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        super("The Calculator");
+        this.setSize(480, 240);
+        this.setLocation(420, 300);
+        this.setResizable(false);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         JPanel key_panel = new JPanel();
         key_panel.setLayout(new GridLayout(4, 4));
@@ -961,12 +1192,12 @@ public class Calculator {
 
         equal_panel.add(beq);
 
-        frame.add(key_panel, BorderLayout.CENTER);
-        frame.add(operation_panel, BorderLayout.EAST);
-        frame.add(equal_panel, BorderLayout.SOUTH);
+        this.add(key_panel, BorderLayout.CENTER);
+        this.add(operation_panel, BorderLayout.EAST);
+        this.add(equal_panel, BorderLayout.SOUTH);
 
-        frame.add(display, BorderLayout.NORTH);
-        frame.setVisible(true);
+        this.add(display, BorderLayout.NORTH);
+        this.setVisible(true);
     }
 
     public static void main(String[] args) {
