@@ -3,7 +3,7 @@
  */
 
 import com.sun.java.swing.plaf.motif.MotifBorders;
-
+import java.util.Arrays;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -329,11 +329,11 @@ public class Calculator extends JFrame {
 
     private class Graph extends JFrame {
 
-        private String function = "x*x-1";//"sin(x)*sin(20*x)";
-        private Double Xs = -2.0;
-        private Double Xe = 2.0;
+        private String function = "sin(x)*sin(50*x)";
+        private Double Xs = -6.28;
+        private Double Xe = 6.28;
 
-        private int x0 = 50;
+        private int x0 = 60;
         private int y0 = 50;
         private int xm;
         private int ym;
@@ -364,8 +364,8 @@ public class Calculator extends JFrame {
 
             Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 
-            H = (int) (0.9 * dim.getHeight());
-            L = (int) (0.9 * dim.getWidth());
+            H = (int) (0.7 * dim.getHeight());
+            L = (int) (0.7 * dim.getWidth());
 
             this.setSize(L, H);
             this.setLayout(null);
@@ -378,6 +378,7 @@ public class Calculator extends JFrame {
                     super.componentResized(e);
                     H = e.getComponent().getHeight();
                     L = e.getComponent().getWidth();
+                    System.out.println("Width = " + L + ", Height = " + H);
                     isRepaint = true;
                     initGraph(L, H, isRepaint);
                 }
@@ -415,7 +416,8 @@ public class Calculator extends JFrame {
 
             fConditions = new JPanel();
             fConditions.setLayout(null);
-            fConditions.setBounds((int)(0.35 * L + 80), 10, L - 100, 70);
+            //fConditions.setBorder(new MotifBorders.BevelBorder(false, Color.black, Color.LIGHT_GRAY));
+            fConditions.setBounds((int)(0.35 * L + 80), 10, 470, 70);
 
             JLabel fStartPointLabel = new JLabel("X0 =");
             fStartPointLabel.setBounds(0, 0, 30, 25);
@@ -429,18 +431,18 @@ public class Calculator extends JFrame {
             fConditions.add(fStartPoint);
 
             JLabel fEndPointLabel = new JLabel("X1 =");
-            fEndPointLabel.setBounds(0, 40, 30, 25);
+            fEndPointLabel.setBounds(0, 45, 30, 25);
             fConditions.add(fEndPointLabel);
 
             JTextPane fEndPoint = new JTextPane();
             fEndPoint.setFont(new Font("Dialog", Font.PLAIN, 16));
             fEndPoint.setText(Xe.toString());
             fEndPoint.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
-            fEndPoint.setBounds(35, 40, 90, 25);
+            fEndPoint.setBounds(35, 45, 90, 25);
             fConditions.add(fEndPoint);
 
             showGridsX = new JCheckBox("Grid X");
-            showGridsX.setBounds(150, 0, 60, 25);
+            showGridsX.setBounds(180, 0, 60, 25);
             showGridsX.setSelected(drawGridX);
             showGridsX.addChangeListener(new ChangeListener() {
                 @Override
@@ -452,7 +454,7 @@ public class Calculator extends JFrame {
             fConditions.add(showGridsX);
 
             showGridsY = new JCheckBox("Grid Y");
-            showGridsY.setBounds(150, 40, 60, 25);
+            showGridsY.setBounds(180, 45, 60, 25);
             showGridsY.setSelected(drawGridY);
             showGridsY.addChangeListener(new ChangeListener() {
                 @Override
@@ -463,52 +465,44 @@ public class Calculator extends JFrame {
             });
             fConditions.add(showGridsY);
 
-            JLabel gridsX = new JLabel("Grid X number");
-            gridsX.setBounds(240, 0, 90, 25);
-            fConditions.add(gridsX);
-
             JTextPane gridsXnumberField = new JTextPane();
             gridsXnumberField.setFont(new Font("Dialog", Font.PLAIN, 16));
             gridsXnumberField.setText(gridXnumber.toString());
-            gridsXnumberField.setBounds(340, 0, 50, 25);
+            gridsXnumberField.setBounds(240, 0, 30, 25);
             gridsXnumberField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
             fConditions.add(gridsXnumberField);
-
-            JLabel gridsY = new JLabel("Grid Y number");
-            gridsY.setBounds(240, 40, 90, 25);
-            fConditions.add(gridsY);
 
             JTextPane gridsYnumberField = new JTextPane();
             gridsYnumberField.setFont(new Font("Dialog", Font.PLAIN, 16));
             gridsYnumberField.setText(gridYnumber.toString());
-            gridsYnumberField.setBounds(340, 40, 50, 25);
+            gridsYnumberField.setBounds(240, 45, 30, 25);
             gridsYnumberField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
             fConditions.add(gridsYnumberField);
 
             JLabel pointsNumber = new JLabel("Points number");
-            pointsNumber.setBounds(430, 0, 100, 25);
+            pointsNumber.setBounds(320, 0, 90, 25);
             fConditions.add( pointsNumber);
 
             JTextPane pointsNumberField = new JTextPane();
             pointsNumberField.setFont(new Font("Dialog", Font.PLAIN, 16));
             pointsNumberField.setText(points.toString());
-            pointsNumberField.setBounds(530, 0, 50, 25);
+            pointsNumberField.setBounds(410, 0, 50, 25);
             pointsNumberField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
             fConditions.add(pointsNumberField);
 
             JLabel xAccuracy = new JLabel("X accuracy");
-            xAccuracy.setBounds(430, 40, 100, 25);
+            xAccuracy.setBounds(320, 45, 90, 25);
             fConditions.add(xAccuracy);
 
             JTextPane accuracyField = new JTextPane();
             accuracyField.setFont(new Font("Dialog", Font.PLAIN, 16));
             accuracyField.setText(accuracy.toString());
-            accuracyField.setBounds(530, 40, 50, 25);
+            accuracyField.setBounds(410, 45, 50, 25);
             accuracyField.setBorder(new MotifBorders.BevelBorder(true, Color.LIGHT_GRAY, Color.LIGHT_GRAY));
             fConditions.add(accuracyField);
 
             bbuild = new JButton(("Build graph"));
-            bbuild.setBounds(20, H - 90, L - 60, 40);
+            bbuild.setBounds((int) (0.35 * L) + 600, 22, 100, 40);
             bbuild.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -556,7 +550,7 @@ public class Calculator extends JFrame {
                                 break;
                             }
                             catch (NumberFormatException ex) {}
-                        gridsXnumberField.setText(gridsX.toString());
+                        gridsXnumberField.setText(gridXnumber.toString());
                         initGraph(L, H, false);
                     }
 
@@ -570,7 +564,7 @@ public class Calculator extends JFrame {
                                 break;
                             }
                             catch (NumberFormatException ex) {}
-                        gridsYnumberField.setText(gridsY.toString());
+                        gridsYnumberField.setText(gridYnumber.toString());
                         initGraph(L, H, false);
                     }
 
@@ -605,7 +599,7 @@ public class Calculator extends JFrame {
                     if (graphic != null) Graph.this.remove(graphic);
 
                     graphic = new FunctionGraphic(function, Xs, Xe, isRepaint);
-                    graphic.setBounds(60, 50, L - 120, H - 120);
+                    graphic.setBounds(15, 50, L - 30, H - 80);
                     Graph.this.add(graphic);
                     Graph.this.repaint(0, 0, L, H);
                     Graph.this.revalidate();
@@ -615,7 +609,7 @@ public class Calculator extends JFrame {
 
             if (isRepaint)
             if (graphic != null) {
-                graphic.setBounds(60, 50, L - 120, H - 120);
+                graphic.setBounds(15, 50, L - 30, H - 80);
                 Graph.this.repaint(0, 0, L, H);
                 Graph.this.revalidate();
                 Graph.this.setVisible(true);
@@ -671,8 +665,8 @@ public class Calculator extends JFrame {
                     matrix[1][i] = Double.parseDouble(new Solver(function.replace("x", matrix[0][i] + "")).Result);
                 }
 
-                for (int i = 0; i < matrix[0].length; i ++)
-                    System.out.println("X=" + matrix[0][i] + " Y=" + matrix[1][i]);
+                //for (int i = 0; i < matrix[0].length; i ++)
+                //    System.out.println("X=" + matrix[0][i] + " Y=" + matrix[1][i]);
                 return matrix;
             }
 
@@ -717,33 +711,18 @@ public class Calculator extends JFrame {
                     if (drawGridY)
                         for (int i = 0; i <= gridYnumber; i ++) {
                             g.drawLine(x0, y0 + i * dY, xm, y0 + i * dY);
-                            g.drawString(yAxisMarks[i], x0 - 7 * yAxisMarks[i].length(), ym - i * dY);
+                            g.drawString(yAxisMarks[i], x0 - 7 * yAxisMarks[i].length(), ym - i * dY + 5);
                         }
                 }
 
                 g.drawRect(x0, y0, xm - x0, ym - y0);
 
-                if ((yMin >= 0) && (yMax >= 0)) {
-                    g.setColor(Color.BLACK);
-                    g.drawLine(x0, ym, xm, ym);
-                }
-                if ((yMin <= 0) && (yMax <= 0)) {
-                    g.setColor(Color.BLACK);
-                    g.drawLine(x0, y0, xm, y0);
-                }
-                if ((xMin >= 0) && (xMax >= 0)) {
-                    g.setColor(Color.BLACK);
-                    g.drawLine(x0, y0, x0, ym);
-                }
-                if ((xMin <= 0) && (xMax <= 0)) {
-                    g.setColor(Color.BLACK);
-                    g.drawLine(xm, y0, xm, ym);
-                }
-
                 if ((yMin <= 0) && (yMax >= 0)) {
                     g.setColor(Color.BLACK);
                     double coef = Math.abs(yMin) / (Math.abs(yMin) + yMax);
                     System.out.println("coefY="+coef);
+                    g.drawLine(xm, y0 + (int) ((ym-y0) * (1 - coef)), xm - 15, y0 + (int) ((ym-y0) * (1 - coef)) - 5);
+                    g.drawLine(xm, y0 + (int) ((ym-y0) * (1 - coef)), xm - 15, y0 + (int) ((ym-y0) * (1 - coef)) + 5);
                     g.drawLine(x0, y0 + (int) ((ym-y0) * (1 - coef)), xm, y0 + (int) ((ym-y0) * (1 - coef)));
                 }
                 if ((xMin <= 0) && (xMax >= 0)) {
@@ -751,11 +730,13 @@ public class Calculator extends JFrame {
                     double coef = Math.abs(xMin) / (Math.abs(xMin) + xMax);
                     System.out.println("coefX="+coef);
                     g.drawLine(x0 + (int) ((xm - x0) * coef), y0, x0 + (int) ((xm - x0) * coef), ym);
+                    g.drawLine(x0 + (int) ((xm - x0) * coef), y0, x0 + (int) ((xm - x0) * coef) - 5, y0 + 15);
+                    g.drawLine(x0 + (int) ((xm - x0) * coef), y0, x0 + (int) ((xm - x0) * coef) + 5, y0 + 15);
                 }
 
                 g.setColor(Color.BLUE);
-                g.drawString(Round(yMin), x0 - 7 * Round(yMin).length(), ym);
-                g.drawString(Round(yMax) + "", x0 - 7 * Round(yMax).length(), y0);
+                g.drawString(Round(yMin), x0 - 7 * Round(yMin).length(), ym + 5);
+                g.drawString(Round(yMax) + "", x0 - 7 * Round(yMax).length(), y0 + 5);
                 g.setColor(Color.RED);
                 g.drawString(Round(xMin), x0 - (int) (3.5 * Round(xMin).length()), ym + 20);
                 g.drawString(Round(xMax), xm - (int) (3.5 * Round(xMax).length()), ym + 20);

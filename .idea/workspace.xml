@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48d48567-bb7e-4932-a0f2-72cdb6618271" name="Default" comment="" />
+    <list default="true" id="48d48567-bb7e-4932-a0f2-72cdb6618271" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$1.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$10.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$11.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$12.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$13.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$14.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$15.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$16.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$17.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$18.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$19.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$2.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$20.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$21.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$22.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$23.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$24.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$24.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$25.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$25.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$26.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$26.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$27.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$27.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$28.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$28.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$29.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$29.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$3.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$30.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$30.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$4.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$5.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$6.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$7.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$8.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$9.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$Graph$1.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$Graph$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$Graph$2.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$Graph$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$Graph$3.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$Graph$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$Graph$4.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$Graph$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$Graph$FunctionGraphic.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$Graph$FunctionGraphic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator$Graph.class" afterPath="$PROJECT_DIR$/target/classes/Calculator$Graph.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Calculator.class" afterPath="$PROJECT_DIR$/target/classes/Calculator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" />
+    </list>
     <ignored path="Calculator.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +69,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+            <state relative-caret-position="408">
+              <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -38,50 +79,51 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="741">
+              <caret line="673" column="35" lean-forward="false" selection-start-line="673" selection-start-column="35" selection-end-line="673" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
                 <element signature="method#GetResult#0;class#Calculator#0" expanded="false" />
                 <element signature="class#Solver#0;class#Calculator#0" expanded="false" />
-                <element signature="e#12391#12392#0" expanded="true" />
-                <element signature="e#12432#12433#0" expanded="true" />
-                <element signature="class#Graph#0;class#Calculator#0" expanded="false" />
+                <element signature="e#11235#11831#0" expanded="true" />
+                <element signature="e#11830#11831#0" expanded="true" />
+                <element signature="class#19781:24801" expanded="false" />
                 <element signature="method#Clear#0;class#Calculator#0" expanded="false" />
                 <element signature="method#AddDigit#0;class#Calculator#0" expanded="false" />
                 <element signature="method#SetOperation#0;class#Calculator#0" expanded="false" />
                 <element signature="method#Calculator#0;class#Calculator#0" expanded="false" />
-                <element signature="class#37346:37678" expanded="false" />
-                <element signature="class#37751:37950" expanded="false" />
-                <element signature="class#38023:38222" expanded="false" />
-                <element signature="class#38295:38494" expanded="false" />
-                <element signature="class#38567:38766" expanded="false" />
-                <element signature="class#38839:39038" expanded="false" />
-                <element signature="class#39111:39310" expanded="false" />
-                <element signature="class#39383:39582" expanded="false" />
-                <element signature="class#39655:39854" expanded="false" />
-                <element signature="class#39927:40126" expanded="false" />
-                <element signature="class#40207:40873" expanded="false" />
-                <element signature="class#40952:41155" expanded="false" />
-                <element signature="class#41236:41439" expanded="false" />
-                <element signature="class#41520:41723" expanded="false" />
-                <element signature="class#41806:42009" expanded="false" />
-                <element signature="class#42084:42613" expanded="false" />
-                <element signature="class#42689:42882" expanded="false" />
-                <element signature="class#42962:43273" expanded="false" />
-                <element signature="class#43352:43663" expanded="false" />
-                <element signature="class#43741:44052" expanded="false" />
-                <element signature="class#44133:44445" expanded="false" />
-                <element signature="class#44524:44835" expanded="false" />
-                <element signature="class#44917:45229" expanded="false" />
-                <element signature="class#45308:45619" expanded="false" />
-                <element signature="class#45701:46012" expanded="false" />
-                <element signature="class#46092:46403" expanded="false" />
-                <element signature="class#46482:46793" expanded="false" />
-                <element signature="class#46879:47030" expanded="false" />
-                <element signature="class#47115:47265" expanded="false" />
-                <element signature="e#48492#48493#0" expanded="true" />
-                <element signature="e#48524#48525#0" expanded="true" />
+                <element signature="e#33745#36933#0" expanded="true" />
+                <element signature="e#36932#36933#0" expanded="true" />
+                <element signature="class#37104:37436" expanded="false" />
+                <element signature="class#37509:37708" expanded="false" />
+                <element signature="class#37781:37980" expanded="false" />
+                <element signature="class#38053:38252" expanded="false" />
+                <element signature="class#38325:38524" expanded="false" />
+                <element signature="class#38597:38796" expanded="false" />
+                <element signature="class#38869:39068" expanded="false" />
+                <element signature="class#39141:39340" expanded="false" />
+                <element signature="class#39413:39612" expanded="false" />
+                <element signature="class#39685:39884" expanded="false" />
+                <element signature="class#39965:40631" expanded="false" />
+                <element signature="class#40710:40913" expanded="false" />
+                <element signature="class#40994:41197" expanded="false" />
+                <element signature="class#41278:41481" expanded="false" />
+                <element signature="class#41564:41767" expanded="false" />
+                <element signature="class#41842:42371" expanded="false" />
+                <element signature="class#42447:42640" expanded="false" />
+                <element signature="class#42720:43031" expanded="false" />
+                <element signature="class#43110:43421" expanded="false" />
+                <element signature="class#43499:43810" expanded="false" />
+                <element signature="class#43891:44203" expanded="false" />
+                <element signature="class#44282:44593" expanded="false" />
+                <element signature="class#44675:44987" expanded="false" />
+                <element signature="class#45066:45377" expanded="false" />
+                <element signature="class#45459:45770" expanded="false" />
+                <element signature="class#45850:46161" expanded="false" />
+                <element signature="class#46240:46551" expanded="false" />
+                <element signature="class#46637:46788" expanded="false" />
+                <element signature="class#46873:47023" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -98,6 +140,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -114,12 +157,11 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -155,16 +197,6 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -181,16 +213,10 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Calculator" />
@@ -263,36 +289,30 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.Calculator">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -314,7 +334,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -369,27 +393,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -503,34 +506,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="false" name="Calculator" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Calculator" />
@@ -572,6 +547,30 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Calculator" />
       <item index="1" class="java.lang.String" itemvalue="Maven.Calculator" />
     </list>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -586,39 +585,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490608523459</updated>
+      <workItem from="1494922954873" duration="764000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="764000" />
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17135416" sideWeight="0.49546045" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18585005" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18585005" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17135416" sideWeight="0.50453955" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17135416" sideWeight="0.50453955" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -644,8 +655,67 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12376">
+          <caret line="728" column="44" lean-forward="false" selection-start-line="728" selection-start-column="44" selection-end-line="728" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#GetResult#0;class#Calculator#0" expanded="false" />
+            <element signature="class#Solver#0;class#Calculator#0" expanded="false" />
+            <element signature="e#11235#11831#0" expanded="true" />
+            <element signature="e#11830#11831#0" expanded="true" />
+            <element signature="class#19781:24801" expanded="false" />
+            <element signature="method#Clear#0;class#Calculator#0" expanded="false" />
+            <element signature="method#AddDigit#0;class#Calculator#0" expanded="false" />
+            <element signature="method#SetOperation#0;class#Calculator#0" expanded="false" />
+            <element signature="method#Calculator#0;class#Calculator#0" expanded="false" />
+            <element signature="e#33745#36933#0" expanded="true" />
+            <element signature="e#36932#36933#0" expanded="true" />
+            <element signature="class#37104:37436" expanded="false" />
+            <element signature="class#37509:37708" expanded="false" />
+            <element signature="class#37781:37980" expanded="false" />
+            <element signature="class#38053:38252" expanded="false" />
+            <element signature="class#38325:38524" expanded="false" />
+            <element signature="class#38597:38796" expanded="false" />
+            <element signature="class#38869:39068" expanded="false" />
+            <element signature="class#39141:39340" expanded="false" />
+            <element signature="class#39413:39612" expanded="false" />
+            <element signature="class#39685:39884" expanded="false" />
+            <element signature="class#39965:40631" expanded="false" />
+            <element signature="class#40710:40913" expanded="false" />
+            <element signature="class#40994:41197" expanded="false" />
+            <element signature="class#41278:41481" expanded="false" />
+            <element signature="class#41564:41767" expanded="false" />
+            <element signature="class#41842:42371" expanded="false" />
+            <element signature="class#42447:42640" expanded="false" />
+            <element signature="class#42720:43031" expanded="false" />
+            <element signature="class#43110:43421" expanded="false" />
+            <element signature="class#43499:43810" expanded="false" />
+            <element signature="class#43891:44203" expanded="false" />
+            <element signature="class#44282:44593" expanded="false" />
+            <element signature="class#44675:44987" expanded="false" />
+            <element signature="class#45066:45377" expanded="false" />
+            <element signature="class#45459:45770" expanded="false" />
+            <element signature="class#45850:46161" expanded="false" />
+            <element signature="class#46240:46551" expanded="false" />
+            <element signature="class#46637:46788" expanded="false" />
+            <element signature="class#46873:47023" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -653,49 +723,50 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="method#GetResult#0;class#Calculator#0" expanded="false" />
             <element signature="class#Solver#0;class#Calculator#0" expanded="false" />
-            <element signature="e#12391#12392#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="class#Graph#0;class#Calculator#0" expanded="false" />
+            <element signature="e#11235#11831#0" expanded="true" />
+            <element signature="e#11830#11831#0" expanded="true" />
+            <element signature="class#19781:24801" expanded="false" />
             <element signature="method#Clear#0;class#Calculator#0" expanded="false" />
             <element signature="method#AddDigit#0;class#Calculator#0" expanded="false" />
             <element signature="method#SetOperation#0;class#Calculator#0" expanded="false" />
             <element signature="method#Calculator#0;class#Calculator#0" expanded="false" />
-            <element signature="class#37346:37678" expanded="false" />
-            <element signature="class#37751:37950" expanded="false" />
-            <element signature="class#38023:38222" expanded="false" />
-            <element signature="class#38295:38494" expanded="false" />
-            <element signature="class#38567:38766" expanded="false" />
-            <element signature="class#38839:39038" expanded="false" />
-            <element signature="class#39111:39310" expanded="false" />
-            <element signature="class#39383:39582" expanded="false" />
-            <element signature="class#39655:39854" expanded="false" />
-            <element signature="class#39927:40126" expanded="false" />
-            <element signature="class#40207:40873" expanded="false" />
-            <element signature="class#40952:41155" expanded="false" />
-            <element signature="class#41236:41439" expanded="false" />
-            <element signature="class#41520:41723" expanded="false" />
-            <element signature="class#41806:42009" expanded="false" />
-            <element signature="class#42084:42613" expanded="false" />
-            <element signature="class#42689:42882" expanded="false" />
-            <element signature="class#42962:43273" expanded="false" />
-            <element signature="class#43352:43663" expanded="false" />
-            <element signature="class#43741:44052" expanded="false" />
-            <element signature="class#44133:44445" expanded="false" />
-            <element signature="class#44524:44835" expanded="false" />
-            <element signature="class#44917:45229" expanded="false" />
-            <element signature="class#45308:45619" expanded="false" />
-            <element signature="class#45701:46012" expanded="false" />
-            <element signature="class#46092:46403" expanded="false" />
-            <element signature="class#46482:46793" expanded="false" />
-            <element signature="class#46879:47030" expanded="false" />
-            <element signature="class#47115:47265" expanded="false" />
-            <element signature="e#48492#48493#0" expanded="true" />
-            <element signature="e#48524#48525#0" expanded="true" />
+            <element signature="e#33745#36933#0" expanded="true" />
+            <element signature="e#36932#36933#0" expanded="true" />
+            <element signature="class#37104:37436" expanded="false" />
+            <element signature="class#37509:37708" expanded="false" />
+            <element signature="class#37781:37980" expanded="false" />
+            <element signature="class#38053:38252" expanded="false" />
+            <element signature="class#38325:38524" expanded="false" />
+            <element signature="class#38597:38796" expanded="false" />
+            <element signature="class#38869:39068" expanded="false" />
+            <element signature="class#39141:39340" expanded="false" />
+            <element signature="class#39413:39612" expanded="false" />
+            <element signature="class#39685:39884" expanded="false" />
+            <element signature="class#39965:40631" expanded="false" />
+            <element signature="class#40710:40913" expanded="false" />
+            <element signature="class#40994:41197" expanded="false" />
+            <element signature="class#41278:41481" expanded="false" />
+            <element signature="class#41564:41767" expanded="false" />
+            <element signature="class#41842:42371" expanded="false" />
+            <element signature="class#42447:42640" expanded="false" />
+            <element signature="class#42720:43031" expanded="false" />
+            <element signature="class#43110:43421" expanded="false" />
+            <element signature="class#43499:43810" expanded="false" />
+            <element signature="class#43891:44203" expanded="false" />
+            <element signature="class#44282:44593" expanded="false" />
+            <element signature="class#44675:44987" expanded="false" />
+            <element signature="class#45066:45377" expanded="false" />
+            <element signature="class#45459:45770" expanded="false" />
+            <element signature="class#45850:46161" expanded="false" />
+            <element signature="class#46240:46551" expanded="false" />
+            <element signature="class#46637:46788" expanded="false" />
+            <element signature="class#46873:47023" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -703,22 +774,14 @@
     <entry file="file://$PROJECT_DIR$/../The Calculator/!!!old/src/alt/Calc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="17" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="974" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-          <folding />
+          <caret line="17" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="974" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/awt/Component.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="3309" column="16" selection-start-line="3309" selection-start-column="16" selection-end-line="3309" selection-end-column="16" />
+          <caret line="3309" column="16" lean-forward="false" selection-start-line="3309" selection-start-column="16" selection-end-line="3309" selection-end-column="16" />
           <folding>
             <element signature="e#114480#114481#0" expanded="false" />
             <element signature="e#114527#114528#0" expanded="false" />
@@ -726,18 +789,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraphBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraphBuilder.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/javax/swing/JComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
-          <caret line="3160" column="16" selection-start-line="3160" selection-start-column="16" selection-end-line="3160" selection-end-column="16" />
+          <caret line="3160" column="16" lean-forward="false" selection-start-line="3160" selection-start-column="16" selection-end-line="3160" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -745,7 +801,7 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/awt/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4003">
-          <caret line="799" column="51" selection-start-line="799" selection-start-column="51" selection-end-line="799" selection-end-column="51" />
+          <caret line="799" column="51" lean-forward="false" selection-start-line="799" selection-start-column="51" selection-end-line="799" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -753,57 +809,66 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="961">
-          <caret line="715" column="23" selection-start-line="715" selection-start-column="23" selection-end-line="715" selection-end-column="23" />
+          <caret line="715" column="23" lean-forward="false" selection-start-line="715" selection-start-column="23" selection-end-line="715" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="741">
+          <caret line="673" column="35" lean-forward="false" selection-start-line="673" selection-start-column="35" selection-end-line="673" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="method#GetResult#0;class#Calculator#0" expanded="false" />
             <element signature="class#Solver#0;class#Calculator#0" expanded="false" />
-            <element signature="e#12391#12392#0" expanded="true" />
-            <element signature="e#12432#12433#0" expanded="true" />
-            <element signature="class#Graph#0;class#Calculator#0" expanded="false" />
+            <element signature="e#11235#11831#0" expanded="true" />
+            <element signature="e#11830#11831#0" expanded="true" />
+            <element signature="class#19781:24801" expanded="false" />
             <element signature="method#Clear#0;class#Calculator#0" expanded="false" />
             <element signature="method#AddDigit#0;class#Calculator#0" expanded="false" />
             <element signature="method#SetOperation#0;class#Calculator#0" expanded="false" />
             <element signature="method#Calculator#0;class#Calculator#0" expanded="false" />
-            <element signature="class#37346:37678" expanded="false" />
-            <element signature="class#37751:37950" expanded="false" />
-            <element signature="class#38023:38222" expanded="false" />
-            <element signature="class#38295:38494" expanded="false" />
-            <element signature="class#38567:38766" expanded="false" />
-            <element signature="class#38839:39038" expanded="false" />
-            <element signature="class#39111:39310" expanded="false" />
-            <element signature="class#39383:39582" expanded="false" />
-            <element signature="class#39655:39854" expanded="false" />
-            <element signature="class#39927:40126" expanded="false" />
-            <element signature="class#40207:40873" expanded="false" />
-            <element signature="class#40952:41155" expanded="false" />
-            <element signature="class#41236:41439" expanded="false" />
-            <element signature="class#41520:41723" expanded="false" />
-            <element signature="class#41806:42009" expanded="false" />
-            <element signature="class#42084:42613" expanded="false" />
-            <element signature="class#42689:42882" expanded="false" />
-            <element signature="class#42962:43273" expanded="false" />
-            <element signature="class#43352:43663" expanded="false" />
-            <element signature="class#43741:44052" expanded="false" />
-            <element signature="class#44133:44445" expanded="false" />
-            <element signature="class#44524:44835" expanded="false" />
-            <element signature="class#44917:45229" expanded="false" />
-            <element signature="class#45308:45619" expanded="false" />
-            <element signature="class#45701:46012" expanded="false" />
-            <element signature="class#46092:46403" expanded="false" />
-            <element signature="class#46482:46793" expanded="false" />
-            <element signature="class#46879:47030" expanded="false" />
-            <element signature="class#47115:47265" expanded="false" />
-            <element signature="e#48492#48493#0" expanded="true" />
-            <element signature="e#48524#48525#0" expanded="true" />
+            <element signature="e#33745#36933#0" expanded="true" />
+            <element signature="e#36932#36933#0" expanded="true" />
+            <element signature="class#37104:37436" expanded="false" />
+            <element signature="class#37509:37708" expanded="false" />
+            <element signature="class#37781:37980" expanded="false" />
+            <element signature="class#38053:38252" expanded="false" />
+            <element signature="class#38325:38524" expanded="false" />
+            <element signature="class#38597:38796" expanded="false" />
+            <element signature="class#38869:39068" expanded="false" />
+            <element signature="class#39141:39340" expanded="false" />
+            <element signature="class#39413:39612" expanded="false" />
+            <element signature="class#39685:39884" expanded="false" />
+            <element signature="class#39965:40631" expanded="false" />
+            <element signature="class#40710:40913" expanded="false" />
+            <element signature="class#40994:41197" expanded="false" />
+            <element signature="class#41278:41481" expanded="false" />
+            <element signature="class#41564:41767" expanded="false" />
+            <element signature="class#41842:42371" expanded="false" />
+            <element signature="class#42447:42640" expanded="false" />
+            <element signature="class#42720:43031" expanded="false" />
+            <element signature="class#43110:43421" expanded="false" />
+            <element signature="class#43499:43810" expanded="false" />
+            <element signature="class#43891:44203" expanded="false" />
+            <element signature="class#44282:44593" expanded="false" />
+            <element signature="class#44675:44987" expanded="false" />
+            <element signature="class#45066:45377" expanded="false" />
+            <element signature="class#45459:45770" expanded="false" />
+            <element signature="class#45850:46161" expanded="false" />
+            <element signature="class#46240:46551" expanded="false" />
+            <element signature="class#46637:46788" expanded="false" />
+            <element signature="class#46873:47023" expanded="false" />
           </folding>
         </state>
       </provider>
